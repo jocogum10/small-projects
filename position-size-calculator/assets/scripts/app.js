@@ -4,7 +4,13 @@ const pips = document.getElementById("pips")
 const lotSizeElement = document.getElementById("result");
 
 // GET EVENT LISTENERS
-calculateBtn.addEventListener("click", calculatePositionSize)
+calculateBtn.addEventListener("click", calculatePositionSize);
+
+pips.addEventListener("keydown", function (e) {
+    if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
+        calculatePositionSize();
+    }
+});
 
 // FUNCTIONS
 function calculatePositionSize(){
