@@ -15,8 +15,7 @@ pips.addEventListener("keydown", function (e) {
 // FUNCTIONS
 function calculatePositionSize(){
     const pipsNumber = parseInt(pips.value);
-    const brokerPips = pipsNumber / 10;
-    const usdPips = 0.01*brokerPips;
+    const usdPips = 0.01*pipsNumber;
     const lotSize = (2*0.001) / usdPips;
     const roundedLotSize = lotSize.toFixed(2);
 
