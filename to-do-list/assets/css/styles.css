@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #283d5a;
+    color: #fafaf8;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    gap: 3em;
+}
+/* HEADER */
+header{
+    width: 100%;
+    text-align: center;
+}
+/* END HEADER */
+
+/* INPUT SECTION */
+#to-do-input-container{
+    padding: 0.625em 0;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.625em;
+}
+
+#to-do-input{
+    flex: 1 1 auto;
+    padding: 0.3125em;
+    font-size: 3vh;
+    border-radius: 0.8em;
+    background-color: #fafaf8;
+    color: #4BB4DE;
+    border: 0.125em solid #4BB4DE;
+}
+#add-to-do{
+    padding: 0.625em;
+    background-color: #4BB4DE;
+    color: #fafaf8;
+    border-radius: 0.8em;
+}
+#add-to-do:hover{
+    padding: 0.625em;
+    background-color: #fafaf8;
+    color: #4BB4DE;
+    border-radius: 0.8em;
+}
+/* END INPUT SECTION */
+
+
+/* OUTPUT SECTION */
+#to-do-list{
+    /* width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; */
+
+    padding: 0.625em 0;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.list-item{
+    padding: 0.3125em 0;
+    font-size: 3vh;
+    border-radius: 0.8em;
+    color: #4BB4DE;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.625em;
+}
+
+.list-item .task{
+    border: 1px solid green;
+    flex: 1 1 auto;
+    padding: 0.3125em;
+    font-size: 3vh;
+    border-radius: 0.8em;
+    color: #fafaf8;
+    border: 0.125em solid #fafaf8;
+}
+
+#task-complete{
+    text-decoration: line-through;
+    color: #345DA7;
+}
+
+#complete-to-do{
+    padding: 0.625em;
+    background-color: #4BB4DE;
+    color: #fafaf8;
+    border-radius: 0.8em;
+}
+#complete-to-do:hover{
+    padding: 0.625em;
+    background-color: #fafaf8;
+    color: #4BB4DE;
+    border-radius: 0.8em;
+}
+#complete-to-do:disabled{
+    padding: 0.625em;
+    background-color: #283d5a;
+    color: #fafaf8;
+    border-radius: 0.8em;
+}
+
+#delete-to-do{
+    padding: 0.625em;
+    background-color: #4BB4DE;
+    color: #fafaf8;
+    border-radius: 0.8em;
+}
+#delete-to-do:hover{
+    padding: 0.625em;
+    background-color: #fafaf8;
+    color: #4BB4DE;
+    border-radius: 0.8em;
+}
+/* END OUTPUT SECTION */
