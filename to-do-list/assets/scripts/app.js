@@ -1,7 +1,7 @@
 // selectors
 let toDoInputElement = document.getElementById("to-do-input");
 let addToDoBtnElement = document.getElementById("add-to-do");
-let toDoListElement = document.getElementById("to-do-list");
+let toDoListElement = document.getElementById("to-do-list-container");
 let mainElement = document.getElementById("main-section");
 
 let my_list = [];
@@ -35,7 +35,7 @@ function deleteTask(button){
 function updateTask(){
     toDoListElement.remove();
     toDoListElement = document.createElement("section");
-    toDoListElement.setAttribute("id", "to-do-list");
+    toDoListElement.setAttribute("id", "to-do-list-container");
 
     if(!(my_list.length === undefined || my_list.length == 0)){
         for (let i=0; i<my_list.length; i++){

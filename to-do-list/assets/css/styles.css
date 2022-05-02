@@ -59,13 +59,7 @@ header{
 
 
 /* OUTPUT SECTION */
-#to-do-list{
-    /* width: 60vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start; */
-
+#to-do-list-container{
     padding: 0.625em 0;
     width: 60vw;
     display: flex;
@@ -133,3 +127,31 @@ header{
     border-radius: 0.8em;
 }
 /* END OUTPUT SECTION */
+
+@media (max-width:450px){
+    #to-do-input-container{
+        padding: 0.313em 0.125em;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #to-do-input{
+        font-size: 0.8em;
+    }
+    #add-to-do{
+        font-size: 0.8em;
+    }
+    #to-do-list-container{
+        padding: 0.313em 0.125em;
+        width: min-content;
+        flex-wrap: wrap;
+    }
+    .list-item .task{
+        font-size: 0.5em;
+    }
+    #complete-to-do{
+        font-size: 0.5em;
+    }
+    #delete-to-do{
+        font-size: 0.5em;
+    }
+}
